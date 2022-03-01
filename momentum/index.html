@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link href="assets/favicon.ico" rel="shortcut icon" /> -->
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-control">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="player-volums">
+          <button class="volume-up player-icon"></button>
+          <input type="range" class="volume range" value="50">
+        </div>
+      </div>
+      <div class="info-play">
+        <span class="info-play-name"></span>
+        <div class="range-progress">
+          <input type="range" class="progress range" value="10">
+          <span class="info-play-time"></span>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="settings">
+      <button class="settings-button"></button>
+      <div class="settings-list unshow">
+        <button class="close-button">x</button>
+        <div class="settings-languages setting">
+          <label for="languages-select" class="setting-languages"></label>
+          <select id="languages-select">
+            <option value="en" class="language1"></option>
+            <option value="ru" class="language2"></option>
+          </select>
+        </div>
+        <div class="settings-fons setting">
+          <label for="fon-select" class="setting-fon"></label>
+          <select id="fon-select">
+            <option value="GitHub">GitHub</option>
+            <option value="Unsplash">Unsplash API</option>
+            <option value="Flickr">Flickr API</option>
+          </select>
+          <input type="text" class="search unshow"/>
+        </div>
+        <div class="settings-playr setting">
+          <label for="playr-select" class="setting-playr"></label>
+          <select id="playr-select">
+            <option value="show" class="playr1"></option>
+            <option value="unshow" class="playr2"></option>
+          </select>
+        </div>
+        <div class="settings-weather setting">
+          <label for="weather-select" class="setting-weather"></label>
+          <select id="weather-select">
+            <option value="show" class="weather1"></option>
+            <option value="unshow" class="weather2"></option>
+          </select>
+        </div>
+        <div class="settings-time setting">
+          <label for="time-select" class="setting-time"></label>
+          <select id="time-select">
+            <option value="show" class="time1"></option>
+            <option value="unshow" class="time2"></option>
+          </select>
+        </div>
+        <div class="settings-date setting">
+          <label for="date-select" class="setting-date"></label>
+          <select id="date-select">
+            <option value="show" class="date1"></option>
+            <option value="unshow" class="date2"></option>
+          </select>
+        </div>
+        <div class="settings-greeting setting">
+          <label for="greeting-select" class="setting-greeting"></label>
+          <select id="greeting-select">
+            <option value="show" class="greeting1"></option>
+            <option value="unshow" class="greeting2"></option>
+          </select>
+        </div>
+        <div class="settings-quote setting">
+          <label for="quote-select" class="setting-quote"></label>
+          <select id="quote-select">
+            <option value="show" class="quote1"></option>
+            <option value="unshow" class="quote2"></option>
+          </select>
+        </div>
+        
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
